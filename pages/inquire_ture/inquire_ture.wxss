@@ -1,0 +1,106 @@
+/* pages/inquire_ture/inquire_ture.wxss */
+.true_yy{
+  width: 100%;
+  height: 100vh;
+  margin-top: 5vh;
+  background-color: #68A7DA;
+  border-radius: 20px 20px 0 0 ;
+  padding: 0 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.true_yy .yuyuejilu{
+  width: 40%;
+  height: 30px;
+  background-color: rgba(243, 244, 245, 0.5);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 99;
+  border-radius: 10px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #1e1e1f;
+}
+
+
+.true_yy .tx_true{
+  text-align: center;
+  color: #FFFFFF;
+  height: 79px;
+  line-height: 79px;
+}
+.true_yy .tx_true text{
+  float: right;
+}
+
+.true_yy .con_jishi{
+  width: 100%;
+  height: 100vw;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  border:2px solid #388dd5;
+  text-align: center;
+  line-height: 14px;
+  position: relative;
+}
+
+.true_yy .con_jishi .jishi{
+  font-size: 50px;
+  color: #388dd5;
+  margin-top: 12%;
+}
+.true_yy .con_jishi .jishi text{
+  font-size: 14px;
+}
+.true_yy .con_jishi .user_img{
+  width: 30vw;
+  height: 30vw;
+  margin: 20px;
+  background-color: #68A7DA;
+  border:2px solid #388dd5;
+  border-radius: 50%;
+}
+.true_yy .con_jishi .user_name{
+  color: #388dd5;
+  font-size: 18px;
+}
+.true_yy .con_jishi .zw_xx{
+  color: #68A7DA;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.true_yy .con_jishi .zw_xx text{
+  color: #388dd5;
+}
+.true_yy .con_jishi .bup_t{
+  width: 100%;
+  height: 8%;
+  position: absolute;
+  /* left: 0; */
+  bottom: 0;
+  text-align: center;
+}
+
+
+
+/* 两按钮 */
+.bup_buttom{
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+}
+/* 按钮 */
+.but_ss{
+  width: 33%;
+  height: 39px;
+  border: 1px solid #FBEEE2;
+  background-color: #68A7DA;
+  border-radius: 20px;
+  line-height: 39px;
+  color: #FFFFFF;
+  float: left;
+  margin: 0 8%;
+}

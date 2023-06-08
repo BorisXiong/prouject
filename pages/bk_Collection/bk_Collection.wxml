@@ -1,0 +1,5 @@
+<!--pages/bk_Collection/bk_Collection.wxml-->
+<view class="no_bk">
+  <image src="{{imagesrc}}"></image>
+
+</view>

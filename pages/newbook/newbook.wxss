@@ -1,0 +1,125 @@
+page{
+  background-color: #68A7DA;
+}
+
+.top_logo{
+  width: 100%;
+  height: 110px;
+  padding: 20px 0 0 20px;
+}
+.top_logo .logo{
+  color: #fff;
+  font-size: 24px;
+}
+.top_logo .l_jianjie{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+/*  */
+.newbool{
+  width: 100%;
+  min-height: 85vh;
+  height: auto !important;
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.newbool .logo_li{
+  width: 60%;
+  height: 28px;
+  /* background-color: aqua; */
+  margin:  20px auto;
+}
+.newbool .logo_li view{
+  width: 20px;
+  height: 20px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  float: left;
+  margin-left: 5%;
+}
+.newbool .logo_li view:nth-child(1),
+.newbool .logo_li view:nth-child(9){
+  width: 4px;
+  height: 4px;
+  background-color: #a2d3fc;
+  margin-top: 12px;
+}
+.newbool .logo_li view:nth-child(2),
+.newbool .logo_li view:nth-child(8){
+  width: 10px;
+  height: 10px;
+  background-color:  #7dbaec;
+  margin-top: 9px;
+}
+.newbool .logo_li view:nth-child(3),
+.newbool .logo_li view:nth-child(7){
+  width: 14px;
+  height: 14px;
+  background-color: #86c1f1;
+  margin-top: 7px;
+}
+.newbool .logo_li view:nth-child(4),
+.newbool .logo_li view:nth-child(6){
+  width: 19px;
+  height: 19px;
+  background-color: #6da6d4;
+  margin-top: 4.5px;
+}
+.newbool .logo_li view:nth-child(5){
+  width: 24px;
+  height: 24px;
+  background-color: #4598dd;
+  margin-top: 2px;
+}
+
+/* book */
+.newbool .books{
+  width: 90%;
+  height: 140px;
+  /* background-color: #E9EDDE; */
+  background-color: rgba(105, 178, 233, 0.4);
+  border-radius: 10px;
+  margin: 10px 5% 20px 5%;
+  padding: 2.5% 0 0 0;
+  position: relative;
+}
+.newbool .books image{
+  width: 25%;
+  height: 120px;
+  background-color: aquamarine;
+  float: left;
+  margin-left: 3%;
+  border-radius: 10px;
+}
+.newbool .books .r_con{
+  width: 62%;
+  height: 120px;
+  /* background-color: azure; */
+  margin-right: 5%;
+  float: right;
+}
+.newbool .books .r_con .bkname{
+  font-size: 18px;
+  font-weight: 600;
+}
+.newbool .books .r_con .bkzuozhe{
+  margin: 10px 0;
+  color: #616161;
+}
+.newbool .books .r_con .bkjianjie{
+  font-size: 13px;
+  /* line-height: 13px; */
+  width: 90%;
+  height: 30%;
+  overflow: hidden;
+  /* background-color: blanchedalmond; */
+}
+/* logo_top */
+.newbool .books .logo_top{
+  position: absolute;
+  right: 5%;
+  top: -10%;
+  color: #e9990e;
+  font-size: 21px;
+}

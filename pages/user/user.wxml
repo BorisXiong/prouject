@@ -1,0 +1,91 @@
+<!--pages/user/user.wxml-->
+<!-- 登陆信息 -->
+<view class="Mine" style="margin-left: {{gerenxinxdonghua}}; ">
+  <view class="u_image" bindtap="bindViewTap">
+    <view>{{user_xinxis.nname}}</view>
+    <image src="{{user_xinxis.userimg}}"></image>
+  </view>
+  <view class="ltop_z">
+    <text>借阅证</text>
+    <view class="juxin1"></view>
+    <view class="juxin2"></view>
+  </view>
+
+  <view class="biaoz">
+    {{u_biaozhi}}
+  </view>
+  <view class="b_con">
+    <view class="xgun"></view>
+    <view class="xgun1"></view>
+    <view class="box">
+      <navigator hover-class="none" url="/pages/ck_yjilu/ck_yjilu">
+        <view>
+          156分钟
+          <text>\n 阅读时长</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="box">
+      <navigator hover-class="neno" url="../mybook/mybook">
+        <view>
+          {{book_julen}}册
+          <text>\n 阅读记录</text>
+        </view>
+      </navigator>
+    </view>
+    <view class="box">
+      <view>
+        100
+        <text>\n 信誉积分</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 
+  <view class="m_img" bindtap="bindViewTap">
+    <image src="{{user_xinxis.userimg}}"  mode="cover" />
+  </view>
+
+  <view class="nickname" bindtap="bindViewTap">
+    <text class="m_name" >{{user_xinxis.nname}}</text>
+
+      <text class="iconfont icon-shizhong" class="m_length">\t150小时</text>
+      
+    <view class="m_id">{{user_xinxis.sno}}</view>
+  </view> -->
+
+
+<!-- 
+  <view class="l_box">
+    <text class="iconfont icon-xinyufen"></text>
+    <view>信誉积分</view>
+  </view>
+  <view class="l_box" bindtap="mybook" hover-class="button_animation">
+    <text class="iconfont icon--" style="color: #6BA4FB;"></text>
+    <view>借阅记录</view>
+  </view> -->
+
+<view class="my_set">
+  <view class="my_li" wx:for="{{settings}}" wx:key="url">
+    <navigator url="{{item.url}}" hover-class="none" bindtap="{{item.url}}">
+      {{item.text}}
+      <text class="r_arrow"><text class="iconfont icon-xiangyoujiantou"></text></text>
+    </navigator>
+  </view>
+
+  <!-- 
+  -->
+  <view class="my_li">
+    <button open-type="contact" session-from='weapp' class="btu_no">客服服务
+    </button>
+    <text class="r_arrow"><text class="iconfont icon-xiangyoujiantou"></text></text>
+  </view>
+
+  <view class="my_li" bindtap="exit">
+
+    退出
+    <text class="r_arrow"><text class="iconfont icon-xiangyoujiantou"></text></text>
+
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/mybook/mybook.wxml-->
+<!-- 搜索框 -->
+<view class="top_bac">
+  <view class="input_t">
+    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+    <input type="text" placeholder="搜索" class="search" value="" bindinput="" />
+  </view>
+</view>
+<!--  -->
+<view class="mybooks">
+  <!-- 通过 isTouchMove 的值来对应移动位置-->
+  <view class="item {{item.isTouchMove ? 'touch-move-active' : ''}}" wx:for="{{dataList}}" wx:key="id">
+    <view class="item-left" data-index="{{index}}" bindtouchstart="touchStart" bindtouchmove="touchMove">
+      <!-- <image src="{{item.url}}"></image> -->
+      <view class="con_con">
+        <!--  图书name-->
+        <view style="color: #000;font-size: 15px;"> {{item.b_name}}</view>
+        <view>编号：{{item.b_myid}}</view>
+        <view>{{item.bookrecord}}</view> <!--  图书作者-->
+        <view style="color:{{item.color}};">{{item.newtime}}</view> <!--  图书预约到期时间-->
+      </view>
+      <!-- 按钮 -->
+      <button class="but_xj" hover-class="button_animation" style="background-color: {{item.color}};">续借</button>
+    </view>
+
+    <view class="delete" data-id="{{item.id}}" bindtap="delItem">
+      <!-- 删除 -->
+      <text class="iconfont icon-cha"></text>
+    </view>
+  </view>
+
+
+</view>

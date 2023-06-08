@@ -1,0 +1,180 @@
+<!--主盒子-->
+<view class='nav_left'>
+  <view class="nav_left_items {{curNav == 1 ? 'active' : ''}}" bindtap="switchRightTab" data-id="1">
+    小说
+  </view>
+  <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
+    文学
+  </view>
+  <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" bindtap="switchRightTab" data-id="3">
+    人文社科
+  </view>
+  <view class="nav_left_items {{curNav == 4 ? 'active' : ''}}" bindtap="switchRightTab" data-id="4">
+    经济管理
+  </view>
+  <view class="nav_left_items {{curNav == 5 ? 'active' : ''}}" bindtap="switchRightTab" data-id="5">
+    科技科普
+  </view>
+  <view class="nav_left_items {{curNav == 6 ? 'active' : ''}}" bindtap="switchRightTab" data-id="6">
+    计算机
+  </view>
+  <view class="nav_left_items {{curNav == 7 ? 'active' : ''}}" bindtap="switchRightTab" data-id="7">
+    成功励志
+  </view>
+  <view class="nav_left_items {{curNav == 8 ? 'active' : ''}}" bindtap="switchRightTab" data-id="8">
+    生活
+  </view>
+  <view class="nav_left_items {{curNav == 9 ? 'active' : ''}}" bindtap="switchRightTab" data-id="9">
+    艺术设计
+  </view>
+  <view class="nav_left_items {{curNav == 10 ? 'active' : ''}}" bindtap="switchRightTab" data-id="10">
+    教育考试
+  </view>
+  <view class="nav_left_items {{curNav == 11 ? 'active' : ''}}" bindtap="switchRightTab" data-id="11">
+    杂志
+  </view>
+</view>
+<view class="container">
+  <!-- 左侧栏 -->
+
+  <!-- 右侧栏 -->
+  <view class="nav_right">
+    <view class="searchBox">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="search" placeholder="搜索" value="" bindconfirm="sousuo" data-id="18" bindtap="switchRightTab"/>
+    </view>
+    <!-- data-id="1" -->
+    <view wx:if="{{curNav==1}}" >
+      <view class="nav_right_items" wx:for="{{bools1}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+           编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+    <!-- data-id="2" -->
+    <view wx:if="{{curNav==2}}">
+      <view class="nav_right_items" wx:for="{{bools2}}" wx:key="id" hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+           编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+    <!-- data-id="3" -->
+    <view wx:if="{{curNav==3}}">
+      <view class="nav_right_items" wx:for="{{bools3}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+    <!-- data-id="4" -->
+    <view wx:if="{{curNav==4}}" >
+      <view class="nav_right_items" wx:for="{{bools4}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+
+ <!-- data-id="5" -->
+ <view wx:if="{{curNav==5}}" >
+      <view class="nav_right_items" wx:for="{{bools5}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+     <!-- data-id="6" -->
+ <view wx:if="{{curNav==6}}" >
+      <view class="nav_right_items" wx:for="{{bools6}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+     <!-- data-id="7" -->
+ <view wx:if="{{curNav==7}}" >
+      <view class="nav_right_items" wx:for="{{bools7}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+     <!-- data-id="8" -->
+ <view wx:if="{{curNav==8}}" >
+      <view class="nav_right_items" wx:for="{{bools8}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+     <!-- data-id="9" -->
+ <view wx:if="{{curNav==9}}" >
+      <view class="nav_right_items" wx:for="{{bools9}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+     <!-- data-id="10" -->
+ <view wx:if="{{curNav==10}}" >
+      <view class="nav_right_items" wx:for="{{bools10}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+     <!-- data-id="11" -->
+ <view wx:if="{{curNav==11}}" >
+      <view class="nav_right_items" wx:for="{{bools11}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+            编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+    <!-- 搜索 -->
+    <view wx:if="{{curNav==18}}" >
+      <view class="nav_right_items" wx:for="{{sousuos}}" wx:key="id"  hover-class="button_animation"  data-id="{{item.b_isbn}}" bindtap="xiangqing">
+        <image src="{{item.b_imgsrc}}"></image>
+        <text class="nav_h1">{{item.b_name}}</text>
+        <view class="nav_jieshao">{{item.b_intro}}</view>
+        <view class="nav_bo">
+           编号：{{item.b_myid}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

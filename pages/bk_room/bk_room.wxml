@@ -1,0 +1,15 @@
+
+
+<view class="li_box" hover-class="butto1" >
+  <image style="width: 76px;" src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5lKf4hvfwOCrfoS.zX*297FPAj3KukRuWEGmLuiLHfAt.z8RtIYdCnrFEU5rxuSXAT6JzBxEd9A76f0ym50GeXQ!/b&bo=mADgAJgA4AADByI!&rf=viewer_4" ></image>
+  <view style="width: 30%;text-align: center;">专注</view>
+</view>
+<view class="li_box"  hover-class="butto1" >
+ 
+  <view style="width: 30%;text-align: center;">同桌</view>
+  <image style="margin-left: 20px;transform: rotateY(-180deg);width: 100px; " src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5gqfNJgdb*p3cYYCE*GY6sJSsrEiJkqYu*IuKbDiHdAPDdsK6svXS8er6EJEEwVC7MyeyOtBevZAqxjdcD*wIJY!/b&bo=3ADgANwA4AADFzI!&rf=viewer_4" ></image>
+</view>
+<view class="li_box"  hover-class="butto1" >
+  <image style="width: 34px;" src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5gqfNJgdb*p3cYYCE*GY6sIQmcQEtO7vLXURSdh0.Y.8hHGEIS9T1y1tolPTISEGM2iyVbDTWAzqRiGDJ5E.VYg!/b&bo=SADgAEgA4AADFzI!&rf=viewer_4"></image>
+  <view>每日计划</view>
+</view>

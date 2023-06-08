@@ -1,0 +1,189 @@
+<!--index.wxml-->
+
+<div class="top_top" >
+
+  <div class="h1_bt"><text>武汉城市学院图书馆</text></div>
+  <!-- 搜索框 -->
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+      <!-- 搜索框 -->
+      <view class="saoma">
+        <navigator url="" hover-class="none" bindtap="scanCodeEvent"><text class="iconfont icon-iconfontscan"></text></navigator>
+      </view>  
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="搜索" />
+      </view>
+      <!--  bindtap="gengduo" -->
+      <view class="gengduo" bindtap="gengduo" style="animation: {{tz_animate}} linear infinite  1s;">
+        <text class="iconfont icon-tongzhi" style="color: {{tz_color}};"></text>
+        <!-- <span style="background-color: {{tz_color}};"></span> -->
+      </view>
+    </view>
+    <!-- 搜索按钮,调用搜索查询方法 -->
+    <view class="weui-search-bar__cancel-btn" bindtap='方法名a'></view>
+  </view>
+  <!-- 搜索框 结束-->
+</div>
+<view class="tushuyy1" >
+  <view class="tuicon">
+    <view class="tu_icon" bindtap="t_yuyue">
+       <!-- <text class="iconfont icon-weizhi" style="color: #208FFC;"></text> -->
+       <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5i*b08kXKVUA1Q2pwzBR4zhLnnH0rzNPxipZlfaOrrbRjTRlL6W4x*beTuV9VFmexVo37UgpIFiNGroo6q8aChQ!/b&bo=MgAyADIAMgADByI!&rf=viewer_4"></image>
+        <view class="nstxt" style="font-size: 11px; font-weight: 600;" >预约到馆</view>
+    </view>
+    <view class="tu_icon" bindtap="jy_book">
+ 
+        <!-- <text class="iconfont icon-tushu2" style="color: #FFB950;"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5rIfU.ruRtZhjiw8eg24YWYfNjYzWIoNgkDsbxCnjDNESkHxAnMPJmBZesscmj3AnsUQ3kY2o8oRp9uD9XRQpKY!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+        <view class="nstxt"  style="font-size: 11px; font-weight: 600; ">图书续借</view>
+
+    </view>
+    <view class="tu_icon">
+      <navigator hover-class="none" bindtap="tj_newbooks">
+        
+        <!-- <text class="iconfont icon-tushu1"  style="color: #66E8CF;"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5gtoQ3HqQxQ5doWNFi0CkEUIPcYOg1eAyW6pTJENDY9Dxj6JWenn67lzgNjktoEvSVs3GWWEozxAF3oC5pfdMb8!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+        <view class="nstxt"  style="font-size: 11px; font-weight: 600; ">图书推荐</view>
+     
+      </navigator>
+    </view>
+    <view class="tu_icon">
+      <navigator hover-class="none" url="/pages/library1/library1">
+        <!-- <text class="iconfont  icon-tushuguan" style="color: #e4c25d;"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5kYUMepoTz6WyohMB0g0VjZCD1EzjVNi1JBAqbGlQaCf20*9BctSgHXiQ6OCQcr7mUX58WaH3VWnGTIuUPjNaCM!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+        <view class="nstxt"  style="font-size: 11px;  font-weight: 600;">入馆教育</view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<!-- 图书应用 -->
+<view class="tushuyy">
+  <!-- <view class="tuh1"><text>图书应用</text></view> -->
+  <!-- 第一行 -->
+  <view class="tuicon">
+    <view class="tu_icon" bindtap="newbks">
+
+        <!-- <text class="iconfont icon-vip-xinshukuizeng"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0M6ZtU/ruAMsa53pVQWN7FLK88i5kavu0vfa8VI8006HxBTzIljC7kvnmj.PozZRJXpddgBgJBVGxVQmM0tBZpMyY.*ZoWn3HSaCuz.lXq1*MaZHrI!/b&bo=MgAyADIAMgADByI!&rf=viewer_4"></image>
+        <view class="nstxt">新书到馆</view>
+   
+    </view>
+    <view class="tu_icon" bindtap="guihuan">
+      <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0M6ZtU/ruAMsa53pVQWN7FLK88i5nAhkz*t1BsDcAHyhVrRDPvvNaZenk6QJi2jQuwjXjQYNf74uqwenARjUTA417eQMaatIDEs5kqoWQ0kFxzg7rk!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+      <!-- <text class="iconfont icon-saoma"></text> -->
+      <view class="nstxt">图书归还</view>
+
+    </view>
+    <view class="tu_icon" bindtap="books_sousuo">
+      <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0M6ZtU/ruAMsa53pVQWN7FLK88i5tZ*.T18*SCb3JbH0Wznpy6UmrVimhNbwWyWkCy3.P5ylRTWod7zobfOmXCCDCayAQeSqJL3yW*LBsgX5X9.lsY!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+      <!-- <text class="iconfont icon-jiaoyu"></text> -->
+      <view class="nstxt">图书查询</view>
+
+    </view>
+    <view class="tu_icon">
+      <navigator hover-class="none" url="/pages/bk_room/bk_room">
+        <!-- <text class="iconfont icon-huiyi"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0M6ZtU/ruAMsa53pVQWN7FLK88i5nAhkz*t1BsDcAHyhVrRDPv4F92eSpe.*bAEBsI*diB.j9aXKXJxB3gZQqOT3pdawSmdq67rj7jbu8ggqo70pwQ!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+        <view class="nstxt">考研室</view>
+      </navigator>
+    </view>
+  
+  </view>
+  <!-- 第二行 -->
+  <view class="tuicon">
+    <view class="tu_icon">
+      <navigator url="../ck_yjilu/ck_yjilu">
+        <!-- <text class="iconfont icon-zuowei"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0M6ZtU/ruAMsa53pVQWN7FLK88i5tmayIzNt9GrQdnwxDwPja.Ia4mH4qp8iqNP.BD9QRtz4h9uwuWZ.BjKs6KI0b5jH4VN.VKiAMjknT8vgqugjEM!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+        <view class="nstxt">预座记录</view>
+      </navigator>
+    </view>
+   
+    <view class="tu_icon">
+      <navigator hover-class="none" url="/pages/bk_Collection/bk_Collection">
+        <!-- <text class="iconfont icon-shoucang"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0M6ZtU/ruAMsa53pVQWN7FLK88i5kavu0vfa8VI8006HxBTzIksNMf9Lk81vMRsOTDBU7LF3sCUn1qCv*uHo5.2g6jDBuLaAiP*ELHFp3xaRcpA66Y!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+        <view class="nstxt">图书收藏</view>
+      </navigator>
+    </view>
+
+    <view class="tu_icon">
+      <navigator url="../mybook/mybook">
+        <!-- <text class="iconfont icon-jilu"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0M6ZtU/ruAMsa53pVQWN7FLK88i5ryLazkHtpTinKvb5eK01.ZhebUJJLIT0cVDqq5LosYR01xFtzp70*a7SCVRc02P0fiF8n.BgXEEeTYar1uiEs4!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+        <view class="nstxt">借阅记录</view>
+      </navigator>
+    </view>
+
+    <view class="tu_icon">
+      <navigator hover-class="none" url="/pages/feedback/feedback">
+        <!-- <text class="iconfont icon-fankui"></text> -->
+        <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0M6ZtU/ruAMsa53pVQWN7FLK88i5qy3FXpLEg5QqBDg8H7eMRCtmkCEnx5ai*2E2OM5ElxoGyOsMxL0cqe36ZO9*aGUIArzctoQzK98XiGTVYmh3fA!/b&bo=MgAyADIAMgADFzI!&rf=viewer_4"></image>
+        <view class="nstxt">问题反馈</view>
+      </navigator>
+    </view>
+  </view>
+  <!-- 第三行 -->
+
+  <!-- -----------------guanbo------------------------------- -->
+  <view class="new_gb">
+
+      <image class="gb_img" src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5lyjWiNw196UNuXxo9mvndGLGBnu2v2Wa1VQZD3xsfqr7izuXY55k2faL*tfNa4K3bTur3OySgu2ArL0ZOQYzew!/b&bo=pAWwBIUHQAYDB*M!&rf=viewer_4" alt="" />
+      <!-- <text class="iconfont icon-shiyongbangzhu" style="font-size:34px; line-height: 42px;"></text> -->
+
+    <view class="gb_txt">
+      <text style="font-weight: 600;">新书到馆\n</text>
+      <text style="font-size: 14px; color: #CDF3F3;">快来查阅观看!</text>
+    </view>
+    <view class="gb_rjinru">
+      <navigator  bindtap="newbks" hover-class="none">
+          进入
+      </navigator>
+    </view>
+  </view>
+  <!-- 轮播图 indicator-dots-->
+  <swiper class="swiper" next-margin="120rpx" previous-margin="120rpx" current="{{currentItemId}}"   bindchange="swiperChange" 
+  autoplay="true" 	
+  indicator-dots="true"  
+  indicator-active-color="#4680EE" 
+  circular="true"
+  interval="1800"
+  >
+    <block wx:for="{{expert_list}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+      <swiper-item item-id="{{index}}" data-item-id="{{index}}">
+        <view class='row'>
+          <view class='col {{currentItemId == index ? "selected" : ""}}'>
+            <image src="{{item.i_imgsrc}}"> </image>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+<!-- <swiper class="swiper" 
+  autoplay="true" 	
+  indicator-dots="true" 
+  indicator-active-color="#4680EE"
+  interval="1800"
+  circular="true"
+  easing-function="easeInCubic"
+  >
+  <swiper-item wx:for="{{expert_list}}" wx:key="id" class="swiper_items"> 
+    <image src="{{item.i_imgsrc}}"> </image>
+  </swiper-item>
+</swiper> -->
+  
+<!-- 好书推荐 -->
+<view class="tuijian" style="height:{{lenbook*350+170}}rpx;">
+  <view class="tj_h1"><text class="iconfont  icon-xinkuaijiefangshi-13" style="color: #68A7DA;"></text>\t\t\t好书推荐</view>
+  <view class="tj_book" wx:for="{{books}}" wx:key="id" data-id="{{item.b_isbn}}" bindtap="dianji_books">
+    <image src="{{item.b_imgsrc}}" alt="" />
+    <view>{{item.b_name}}</view>
+  </view>
+</view>
+
+
+
+
+</view>

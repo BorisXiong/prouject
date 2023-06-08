@@ -1,0 +1,91 @@
+<!--pages/Personal/Personal.wxml-->
+<view class="top_img" >
+  <view class="my_iocn">
+    <image src="{{user_xinxis.userimg}}"></image>
+    <view class="myname">{{user_xinxis.nname}}</view>
+    <view class="xinzuo_xx">
+      <view><text class="iconfont icon-sousuo1" style="color: red;font-size: 12px;"></text> 狮子座</view>
+      <view>艺术爱好者</view>
+      <view >鲁迅小迷妹</view> 
+      <view class="r_jt"><text class="iconfont icon-icon-arrow-right2"></text></view>
+    </view>
+    <view class="btu" bindtap="tiao_yemian" hover-class="butto1"><text class="iconfont icon-bianji"></text> 编辑资料</view>
+  </view>
+</view>
+<view class="h_topbianti">
+  <view class="{{curNav == 1 ? 'active' : ''}}" data-id="1" bindtap="switchRightTab">主页<view></view></view>
+  <view class="{{curNav == 2 ? 'active' : ''}}" data-id="2" bindtap="switchRightTab">书圈<view></view></view>
+</view>
+<view class="neir_b"  wx:if="{{curNav==1}}">
+  <view class="basic">
+    <view class="h1">基本信息</view>
+    <view>个性签名：{{user.qianming}}</view>
+    <view>读书时长：{{user.times}}小时</view>
+    <view>年龄：{{user.age}}</view>
+  </view>
+  <view class="basic">
+    <view class="h1">我的图书</view>
+    <!-- 1 -->
+    <view class="li" hover-class="butto1">
+      <text class="iconfont icon-history"></text>
+      <navigator hover-class="none" url="../mybook/mybook">
+        <view class="icon_r">
+        <view>历史图书</view>
+        <view>累计阅读{{books}}本书</view>
+      </view>
+      </navigator>
+    </view>
+    <!-- 2 -->
+    <view class="li" hover-class="butto1">
+      <text class="iconfont icon-shoucang1" style="background-color: #F57687;"></text>
+      <view class="icon_r">
+        <view>收藏图书</view>
+        <view>累计收藏{{books}}本书</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="neir_b"  wx:if="{{curNav==2}}">
+  <view class="shuquan"> 
+    <image src="{{user_xinxis.userimg}}"></image>
+    <view class="name">{{user_xinxis.nname}}</view>
+    <view class="shuo">{{shuquan[0].shuoshuo}}</view>
+    <view class="book">
+      <image src="{{tuijian_books[0].b_imgsrc}}"></image>
+      <view class="r_txt">
+        <text>{{tuijian_books[0].b_name}}</text>
+        <view>{{tuijian_books[0].b_author}}</view>
+      </view>
+    </view>
+    <view class="bup_li">
+      <view class="times">{{shuquan[0].times}}</view>
+      <view class="r_icon"> 
+        <text class="iconfont icon-tuijian"></text>
+        <text class="nums"> {{shuquan[0].dianzan}} </text>
+        <text class="iconfont icon-pinglun"></text>
+        <text class="nums"> {{shuquan[0].pinglun}} </text>
+      </view>
+    </view>
+  </view>
+  <view class="shuquan"> 
+    <image src="{{user_xinxis.userimg}}"></image>
+    <view class="name">{{user_xinxis.nname}}</view>
+    <view class="shuo">{{shuquan[1].shuoshuo}}</view>
+    <view class="book">
+      <image src="{{tuijian_books[1].b_imgsrc}}"></image>
+      <view class="r_txt">
+        <text>{{tuijian_books[1].b_name}}</text>
+        <view>{{tuijian_books[1].b_author}}</view>
+      </view>
+    </view>
+    <view class="bup_li">
+      <view class="times">{{shuquan[1].times}}</view>
+      <view class="r_icon"> 
+        <text class="iconfont icon-tuijian"></text>
+        <text class="nums"> {{shuquan[1].dianzan}} </text>
+        <text class="iconfont icon-pinglun"></text>
+        <text class="nums"> {{shuquan[1].pinglun}} </text>
+      </view>
+    </view>
+  </view>
+</view>

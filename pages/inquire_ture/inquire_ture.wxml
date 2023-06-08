@@ -1,0 +1,29 @@
+<!--pages/inquire_ture/inquire_ture.wxml-->
+<view class="true_yy">
+  <view class="tx_true">
+    订座成功!
+    <text class="iconfont  {{txt_iocn}}" bindtap="txt_iocn"></text>
+  </view>
+  <view class="yuyuejilu" style="top: {{jilu_yid}}px;" bindtap="ck_yjilu">查看座位预定记录</view>
+
+  <view class="con_jishi">
+    <view class="jishi" style="color: {{css}};">{{dd}}{{mm}}<text>\n{{css_tishi}}</text></view>
+    <view bindtap="quexiaoyuyeu">
+      <image src="{{user_xinxi.userimg}}" class="user_img"></image>
+    </view>
+    <view class="user_name"><text>{{user_xinxi.nname}}</text></view>
+    <view class="zw_xx"><text>{{louceng_xx}}</text>楼<text>{{zwh_xx}}</text>座</view>
+    <swiper class="bup_t" autoplay="true" interval="2000" duration="1000" circular="true" vertical="true">
+      <swiper-item wx:for="{{text_s}}" wx:key="id">
+        {{item.text}}
+      </swiper-item>
+    </swiper>
+   
+
+  </view>
+  <!-- 按钮 -->
+  <view class="bup_buttom">
+    <button class="but_ss" hover-class="button_animation" bindtap="quxiao" style="color: #388dd5;background-color: #fff;border:  1px solid #388dd5;;">{{quxiao_btn}}</button>
+    <button class="but_ss" hover-class="button_animation" style="background: #388dd5;" bindtap="but_stop">{{qiandao}}</button>
+  </view>
+</view>

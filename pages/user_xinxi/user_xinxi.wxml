@@ -1,0 +1,76 @@
+<!--pages/user_xinxi/user_xinxi.wxml-->
+<view class="u_toux" bindtap="newimgs">
+  <image src="{{user_xinxis.userimg}}"></image>
+  <text class="iconfont icon-bianji1"></text>
+</view>
+
+<view class="box">
+  <!-- 1 -->
+  <!-- 2 -->
+  <view class="m_li">
+    昵称
+    <input class="co_nr" type="text" value="{{user_xinxis.nname}}" bindinput="nname" maxlength="12" />
+    <text class="iconfont icon-bianji1"></text>
+  </view>
+  <!-- 3 -->
+  <view class="m_li">
+    性别
+    <!-- {{user_xinxis.sex}} -->
+    <picker class="co_nr" mode="selector" range="{{array}}" value="{{index}}" bindchange="changeValue">
+      {{array[index]}}
+    </picker>
+    <text class="iconfont icon-bianji1"></text>
+  </view>
+  <!-- 4 -->
+  <view class="m_li">
+    出生年月
+    <view class="co_nr">
+      {{user_xinxis.birthday}}
+    </view>
+    <!-- <input class="co_nr" type="number" value="{{user_xinxis.birthday}}" bindinput="nl_birthday" /> -->
+  
+  </view>
+</view>
+<view class="box">
+  <!-- 1 -->
+  <view class="m_li">
+    姓名
+    <view class="co_nr">
+      {{user_xinxis.user_name}}
+    </view>
+
+  </view>
+  <!-- 2 -->
+  <view class="m_li">
+    学部
+    <view class="co_nr">
+      {{user_xinxis.department_name}}
+    </view>
+
+  </view>
+  <!-- 3 -->
+  <view class="m_li">
+    班级
+    <view class="co_nr">
+      {{user_xinxis.class_name}}
+    </view>
+
+  </view>
+  <!-- 4 -->
+  <view class="m_li">
+    学号
+    <view class="co_nr">
+      {{user_xinxis.sno}}
+    </view>
+
+  </view>
+  <!-- 5 -->
+  <view class="m_li">
+    手机号
+    <input class="co_nr" type="number" value="{{user_xinxis.phone}}" bindinput="phones" maxlength="11" />
+    <text class="iconfont icon-bianji1"></text>
+  </view>
+</view>
+
+<button class="btu" hover-class="butto1" bindtap="xiugai">确认修改</button>
+<button class="btu" hover-class="butto1" bindtap="exit">退出登录</button>

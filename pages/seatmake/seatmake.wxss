@@ -1,0 +1,187 @@
+/* 1. 设置整个页面的背景颜色 */
+page {
+  background: #fff;
+  /* 避免左侧Item不够时 被白色覆盖*/
+}
+
+/* 2.主盒子 */
+.container {
+  width: 100%;
+  /* 宽度占屏幕的100% */
+  height: 100%;
+  /* 高度占屏幕的100% */
+  background-color: #fff;
+  /* 背景颜色 */
+}
+
+/* 3.左盒子*/
+/* 3.1. 左侧栏主盒子总体设置 */
+.nav_left {
+  position: fixed;
+  /* 使用固定定位 */
+  top: 0px;
+  left: 0px;
+  z-index: 99;
+  /* background: linear-gradient(to right,#FFEFE5,#DBFBFA); */
+  background-color:#F3F6FA;
+  text-align: center;
+  width: 20%;
+  height: 100%;
+  /* box-shadow: 4rpx	4rpx 4rpx 4rpx rgba(22, 22, 22, 0.3); */
+  /* border-radius: 0px 10px 10px 0; */
+  padding-top: 10%;
+  
+}
+
+/* 3.2. 左侧栏的每个item */
+.nav_left .nav_left_items {
+  width:100%;
+  height: 40px;
+  padding: 6px 0;
+  color: #9D9090;
+  /* 设置下边线 */
+  font-size: 14px;
+  /* border-bottom: 1px solid #BDD8FC; */
+  /* background-color: #fff; */
+  transition: 0.4s;
+  line-height: 25px;
+  position: relative;
+}
+/* 3.3. 左侧栏list的item被选中时*/
+.nav_left .nav_left_items.active {
+  color: #101010;
+  background: #fff;
+  font-weight: 600;
+  border-left: 5px solid #68A7DA;
+  /* font-size: 16px; */
+  /* border-top: 2px solid #77c5e4;
+  
+  border-bottom: 2px solid #77c5e4; */
+  /* box-shadow: -1rpx	-1rpx 1rpx 1rpx rgba(193, 193, 194, 0.3); */
+  /* border-radius: 20px 0px 0px 20px; */
+  
+}
+
+
+
+/* 4.右盒子 */
+/* 4.1. 右侧栏主盒子总体设置 */
+.nav_right {
+  position: absolute;
+  /* 使用绝对定位 */
+  top: 0;
+  left: 20%;
+  width: 80%;
+  min-height: 100%;
+  height: auto !important;
+  box-sizing: border-box;
+  /* background: #FEE7D7; */
+ 
+}
+/* 搜索框 */
+.searchBox{
+  width: 90%;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 5%;
+  padding-left: 10px;
+  /* background-color: #d3afaf; */
+  border-radius: 10px;
+  box-shadow: 3rpx	6rpx 8rpx 3rpx rgba(112, 112, 112, 0.3);
+  font-size: 15px;
+  position: relative;
+  background-color: #fff;
+}
+.searchBox .search{
+  width: 85%;
+  height: 35px;
+  margin: 0 auto;
+}
+.searchBox icon{
+  position: absolute;
+  top: 30%;
+  left: 4%;
+}
+/* 4.2. 右侧栏中的每个item */
+.nav_right .nav_right_items {
+  width: 90%;
+  margin: 3% auto;
+  height: 120px;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  box-shadow: 3rpx	6rpx 8rpx 4rpx rgba(97, 97, 97, 0.3);
+}
+.nav_right .nav_right_items .nav_h1{
+  float: left;
+  width: 65%;
+  height: 20%;
+  margin-top:15px ;
+  margin-left: 3%;
+  font-weight: 600;
+}
+
+.nav_right .nav_right_items .nav_jieshao{
+  width: 60%;
+  height: 20%;
+  margin: 3%;
+  margin-left: 3%;
+  padding: 0 2%;
+  background-color: #E5E5E5;
+  font-size: 10px;
+  padding-left: 4%;
+  float: left;
+  color: #646464;
+  border-radius: 8rpx;
+  overflow: hidden;
+  line-height: 48rpx;
+}
+.nav_right .nav_right_items .nav_bo{
+  float: left;
+  width: 60%;
+  height: 30%;
+  font-size: 11px;
+  margin-left: 3%;
+  /* background-color: blanchedalmond; */
+  position: relative;
+  color: #B7B7B7;
+  text-align: right;
+  line-height: 280%;
+}
+/* .nav_right .nav_right_items .nav_bo text{
+  line-height: 100%;
+  color: #B7B7B7;
+} */
+.nav_right .nav_right_items .nav_bo button{
+  width:42%;
+  height: 25px;
+  /* float: right; */
+  font-size: 12px;
+  margin: 5% 0;
+  padding: 2% 0;
+  background-color:#326cb8;
+  color: rgb(255, 255, 255);
+  border: 1px solid #234572;
+  /* line-height: 120%; */
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10%;
+  right: 0px;
+  line-height: 15px;
+}
+
+/* 按钮动画 */
+.button_animation{
+  opacity: 0.9;
+  transform: scale(0.95, 0.95);
+}
+/* 4.3. 右侧栏中的每个item的图样式设置 */
+.nav_right .nav_right_items image {
+  width: 25%;
+  height: 80%;
+  margin-top: 5%;
+  margin-left: 15px;
+  border-radius: 10px;
+  background-color: black;
+  float: left;
+  box-shadow: 8rpx 8rpx 12rpx -8rpx rgb(148, 147, 147), 8rpx	8rpx 10rpx -8rpx rgba(0, 0, 0, 0.3);
+}

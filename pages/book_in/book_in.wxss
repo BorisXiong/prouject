@@ -1,0 +1,111 @@
+/* pages/book_in/book_in.wxss */
+page{
+  background-color:#8E99A0;
+}
+
+.top_bk{
+  width: 100%;
+  height: 120px;
+  margin: 12% 0;
+}
+.top_bk .books{
+  width: 80%;
+  height:100%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 3rpx 3rpx 3rpx 2rpx rgb(134, 134, 134);
+
+}
+.top_bk .books .shoucang{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  /* background-color: aqua; */
+  position: absolute;
+  right: 0;
+  top: 0;
+ 
+}
+.top_bk .books .shoucang text{
+  font-size: 26px;
+  /* color: rgb(180, 180, 180); */
+  /* color: #C0C4CD; */
+}
+.top_bk .books image{
+  width: 35%;
+  height: 120%;
+  background-color: rosybrown;
+  margin-top: -4.5%;
+  border-radius: 10px;
+  float: left;
+ 
+}
+.top_bk .books .txt_r{
+  float: left;
+  /* background: royalblue; */
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 5%;
+  /* padding-left: 2%; */
+}
+.top_bk .books .txt_r h2{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 50px;
+}
+.top_bk .books .books_yy{
+  width: 34%;
+  height: 22%;
+  background-color: #1957D2;
+  color: #FFF;
+  border-radius: 20px;
+  line-height: 160%;
+  font-size: 16px;
+  position: absolute;
+  right: 8%;
+  bottom: -10%;
+}
+/* 内容 */
+.neir{
+  width: 100%;
+  /* height: 65vh; */
+  min-height: 72vh;
+  height: auto !important;
+  background-color: #fff;
+  border-radius: 20px 20px 0 0 ;
+  padding: 5%;
+  /* position: fixed;
+  left: 0; */
+  /* bottom: 0; */
+}
+.neir .h1{
+  width: 28%;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 25px;
+  /* border-bottom: 2px solid #25446E; */
+}
+.neir .h1 .b_xian{
+  margin: 0 auto;
+  width: 80%;
+  height: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right,#8bebbe,#4c81f3);
+  /* box-shadow: 1px 1px 1px 1px #1957D2; */
+  background-color: aqua;
+}
+.neir .book_jian{
+  width: 96%;
+  margin: 24px auto;
+  font-size: 12px;
+  line-height: 18px;
+  /* background-color: rgb(132, 142, 226); */
+}
+.neir .book_jian view{
+  margin: 10px 0;
+}

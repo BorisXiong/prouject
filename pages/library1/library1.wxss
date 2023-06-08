@@ -1,0 +1,86 @@
+/* pages/library1/library1.wxss */
+page{
+  background-color: #eee;
+  padding-top: 60px;
+}
+.hh_hy{
+  width: 90%;
+  position: fixed;
+  top: 10px;
+  left: 5%;
+  background-color: #fff;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  /* animation: text_gg linear 10s infinite; */
+}
+.hh_hy swiper{
+  width: 90%;
+  height: 40px;
+  margin-left: 5%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+@keyframes text_gg{
+  0%{
+    transform:  translate(100%);
+  }
+  
+  100%{
+    transform:  translate(-120%);
+  }
+}
+image{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.h1{
+  width: 100%;
+  height: 20px;
+  margin: 10px 0;
+  font-weight: 900;
+  text-align: center;
+}
+
+/*  */
+.contents{
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100px;
+  height: auto !important;
+}
+.contents .min_bioati{
+  width: 100%;
+  margin: 10px 0;
+}
+.contents .cor{
+  width: 90%;
+  margin: 15px auto;
+  /* text-indent: 20px; */
+}
+.contents .cor text{
+  line-height: 24px;
+}
+.contents .cor .tts{
+  width: 100%;
+  height: 20px;
+  margin: 5px 0;
+}
+.contents .cor .tds{
+  height: 20px;
+  width: 35%;
+  text-align: center;
+  float: left;
+  /* background-color: antiquewhite; */
+  font-size: 12px;
+  margin: 0 1%;
+}
+.contents .cor .tds:nth-child(1),
+.contents .cor .tds:nth-child(4),
+.contents .cor .tds:nth-child(7),
+.contents .cor .tds:nth-child(10){
+  width: 23%;
+}

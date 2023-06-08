@@ -1,0 +1,168 @@
+/* pages/mybook/mybook.wxss */
+page{
+  background-color: #A5ACB2;
+}
+.top_bac{
+  width: 100%;
+  height: 10%;
+  background-color: #A5ACB2;
+  overflow: hidden;
+  position: fixed;top: 0;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+/* 搜索框 */
+.input_t{
+  width: 90%;
+  height: 35px;
+  margin: 5% 5% 0 5%;
+  /* padding-left: 10px; */
+  background-color:#FFFFFF;
+  border-radius: 10px;
+  box-shadow: 3rpx	6rpx 8rpx 4rpx rgba(22, 22, 22, 0.3);
+  font-size: 15px;
+  position: relative;
+}
+.input_t .search{
+  width: 85%;
+  height: 35px;
+  margin: 0 auto;
+}
+.input_t icon{
+  position: absolute;
+  top: 30%;
+  left: 4%;
+}
+/*mybooks  */
+.mybooks{
+  width: 90%;
+  /* height: 100%; */
+  margin: 20% 5% 0 5%;
+  /* background-color: antiquewhite; */
+}
+
+/* book */
+.item {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background-color: #FFFFFF;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 3rpx	6rpx 8rpx 4rpx rgba(22, 22, 22, 0.3);
+  overflow: hidden;
+}
+
+/* 除删除按钮之外的其他部分 */
+.item-left {
+  /* 关键代码 start */
+  width: 100%;
+  height: 120px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin-left: -140rpx;
+  transform: translateX(140rpx);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateX(140rpx);
+  /* 关键代码 end */
+
+  position: relative;
+}
+
+/*.item-left 里样式  */
+.item-left image{
+  width: 22%;
+  height: 80%;
+  background-color: #C4C4C4;
+  margin-top: 4%;
+  margin-left: 4%;
+  float: left;
+}
+.item-left .con_con{
+  width: 60%;
+  height: 80%;
+  /* background-color: #C4C4C4; */
+  float: left;
+  /* margin-top: 4%; */
+  margin-left: 4%;
+}
+.item-left .con_con view{
+  color: #A4A4A4;
+  font-size: 12px;
+  margin: 4% 0;
+  height: 18px;
+  overflow: hidden;
+}
+.item-left .con_con view:nth-child(4){
+  /* margin-top: 6%; */
+  color: red;
+}
+.item-left .but_xj{
+  width: 20%;
+  height: 20%;
+  background-color: #F9683C;
+  font-size: 14px;
+  color: #FEEDEA;
+  line-height: 180%;
+  border-radius: 15px;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 删除按钮 */
+.delete {
+  height: 100%;
+  width: 90px;
+  background-color: #F9683C;
+  border-radius: 0 10px 10px 0 ; 
+  /* text-align: center; */
+  position: relative;
+
+
+  /* 关键代码 start */
+  transform: translateX(90px);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateX(90px);
+  /* 关键代码 end */
+}
+
+/* 关键代码 start --> 向左滑动 */
+.touch-move-active .item-left,
+.touch-move-active .delete {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.touch-move-active .delete text{
+  -webkit-transform:  rotate(270deg);
+  transform: rotate(270deg);
+}
+/* 关键代码 end */
+/* 删除里面iocn */
+.delete text{
+  display: flex;
+  width:40px;
+  height: 40px;
+  font-size: 40px;
+  color: #FFFFFF;
+  transition: all 0.4s;
+
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+

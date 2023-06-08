@@ -1,0 +1,60 @@
+<!--pages/library1/library1.wxml-->
+<view class="hh_hy">
+  <swiper autoplay="true" interval="1800" circular="true" vertical="true">
+    <swiper-item>欢迎来到城院！欢迎来到图书馆！</swiper-item>
+    <swiper-item>图书馆是“知识的宝库”，是“智慧的殿堂”</swiper-item>
+    <swiper-item>是你滋润心灵的港湾，也是涵养静气的摇篮</swiper-item>
+    <swiper-item>趁秋叶未黄，走进图书馆吧！</swiper-item>
+  </swiper>
+</view>
+<image src="http://www.wic.edu.cn/upload/20211020/202110201631305804.doc.001.jpeg"></image>
+<view class="h1">
+  入馆须知
+</view>
+
+<view class="contents">
+  <!-- 111111 -->
+  <view class="min_bioati">1、基本概况</view>
+  <view class="cor">
+    <text space="nbsp">       武汉城市学院图书馆地处校园的中心地带，现有面积为14000平方米，读者座位2300余个，拥有图书、电子等10个阅览室，特色图书、报刊展区1个，艺术展区1个，外文原版图书展区1个。</text>
+    <text space="nbsp">\n 2017、2018年连续获得全国“全民阅读先进单位”称号。2019年获评全国“全民阅读示范基地”。</text>
+  </view>
+  <!-- 2222222 -->
+  <view class="min_bioati">2、图书馆开放时间</view>
+  <view class="cor">
+    <view class="tts">
+      <view class="tds"></view>
+      <view class="tds">周一至周五</view>
+      <view class="tds">周六、周日</view>
+    </view>
+    <view class="tts">
+      <view class="tds">阅览室</view>
+      <view class="tds">8:10-22:00</view>
+      <view class="tds">8:30-22:00</view>
+    </view>
+    <view class="tts">
+      <view class="tds">服务台</view>
+      <view class="tds">8:10-22:00</view>
+      <view class="tds">8:30-22:00</view>
+    </view>
+    <view class="tts">
+      <view class="tds">考研室</view>
+      <view class="tds">7:00-22:00</view>
+      <view class="tds">7:00-22:00</view>
+    </view>
+
+  </view>
+  <!-- 3333333 -->
+  <view class="min_bioati">3、入馆流程</view>
+  <view class="cor">
+    <text space="nbsp">   （1）读者入馆必须全程佩戴口罩，本人刷脸或凭本人校园一卡通刷卡入馆。</text>
+    <text space="nbsp">\n   （2）一楼入口设有红外测温仪，读者入馆排队测温，体温正常者方可入馆。超过37.3度及不佩戴口罩的人员不得入馆，并由专人送至校医院，排队入馆时须间隔1.5米以上。</text>
+    <text space="nbsp">\n   （3）读者入馆后，按照引导牌有序至相应区域，不扎堆、不聚集。</text>
+    <image src="http://www.wic.edu.cn/upload/20211020/202110201631305804.doc.002.png"></image>
+  </view>
+  <!-- 4444444 -->
+  <view class="min_bioati">4、馆内布局</view>
+  <view class="cor">
+    <image src="http://www.wic.edu.cn/upload/20211020/202110201631305804.doc.003.jpeg"></image>
+  </view>
+</view>

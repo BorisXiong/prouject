@@ -1,0 +1,64 @@
+<!-- 预定 时间栏 -->
+<view class="yuding">
+  <view class="yud_box {{index==idx?'active':''}}" wx:for="{{times}}" wx:key="id" data-index="{{index}}" bindtap="getIndexValue">
+    <view class="{{index==idx?'icon_image':''}}"></view>
+    <text>{{item.day}}\n{{item.xinqi}}\n{{item.time}}</text>
+  </view>
+</view>
+<!-- 预定信息 -->
+<view style="width: 90%;height: 40px;margin: 0 auto;font-size: 18px;">
+  预定信息
+
+</view>
+<!--  预定信息-->
+<view class="yuding_bup">
+  <!-- 1 -->
+  <view class="framework">
+    <text>座位位置</text>
+    <select>
+      <navigator style="margin-left: 12px;" url="../Choice/Choice" hover-class="nav_oncik">选\t择\t座\t位:
+        <text style="color: #388dd5;font-size: 18px;">{{jilous}}{{jihaos}}</text> 
+      </navigator>
+    </select>
+  </view>
+  <!-- 2 -->
+  <view class="framework">
+    <text>到达时间</text>
+    <select>
+      <!-- 下拉选择 -->
+      <view class='top-selected' bindtap='bindShowMsg'>
+        <text>{{grade_name}}</text>
+        <text class="iconfont {{xiala}}"></text>
+      </view>
+      <!-- 下拉需要显示的列表 -->
+      <view class="select_box" wx:if="{{select}}">
+        <view wx:for="{{grades}}" wx:key="unique">
+          <view class="select_one" bindtap="mySelect" data-name="{{item}}">{{item}}</view>
+        </view>
+      </view>
+
+    </select>
+  </view>
+  <!-- 3 -->
+  <view class="framework">
+    <text>详细时间</text>
+    <select>
+
+      <view class='top-selected'>
+        <picker mode="time" value="{{time}}" start="06:01" end="21:59" bindchange="bindTimeChange">
+         
+            <text style="line-height: 100%;">请选择:</text><text style="color: #388dd5; font-size: 18px;">{{time}}</text>
+        
+        </picker>
+      </view>
+
+
+    </select>
+  </view>
+  <!-- btu -->
+
+  <view class="but_yuy">
+    <button hover-class="button_animation" bindtap="go_yuyue">立即预约</button>
+  </view>
+
+</view>

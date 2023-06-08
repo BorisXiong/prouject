@@ -1,0 +1,28 @@
+
+/**app.wxss**/
+@import "./icons/icon.wxss";
+
+
+
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 主题颜色 通过变量来实现 */
+page{
+  /* 定义主题颜色 */
+
+  background-color: #eee;
+ 
+  font-size: 28rpx;
+}
+.button_animation{
+  opacity: 0.9;
+  transform: scale(0.95, 0.95);
+}
+.butto1{
+  opacity: 0.9;
+  transform: scale(0.99, 0.99);
+}

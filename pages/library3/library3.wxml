@@ -1,0 +1,46 @@
+<view class="h1">借阅规则</view>
+<view class="contents">
+  <view class="min_bioati">1、借阅流程</view>
+  <view class="cor">
+    <text>刷卡进馆→查询馆藏→书库找书→服务台办理借阅手续。</text>
+  </view>
+
+  <view class="min_bioati">2、查找图书</view>
+  <view class="cor">
+    <text space="nbsp">  （1）一楼服务台查询。</text>
+    <image src="http://www.wic.edu.cn/upload/20211020/202110201631305804.doc.004.jpeg"></image>
+    <text space="nbsp"> （2）自主查询：一楼大厅查询机、超星学习通APP、图书馆网页及图书馆公众号查询。</text>
+    <image src="http://www.wic.edu.cn/upload/20211020/202110201631305804.doc.005.jpeg"></image>
+    <text space="nbsp"> （3）打开查询网页找到搜索栏———选择搜索字段“题名、ISBN号、著者”等，输入关键词，点击检索，即可看到所查图书信息。</text>
+    <image src="http://www.wic.edu.cn/upload/20211020/202110201631305804.doc.007.jpeg"></image>
+    <text space="nbsp"> (4）根据图书的“索书号”到相应的书架上就可以找到啦。</text>
+    <image src="http://www.wic.edu.cn/upload/20211020/202110201631305804.doc.009.jpeg" style="height: 400px;"></image>
+  </view>
+
+  <view class="min_bioati">3、借阅权限</view>
+  <view class="cor">
+    <text space="nbsp">     在借阅期限内将书籍归还到所借书库前台。每本书在没有超期的情况下可续借一次（30天）。如果图书超期，须按规定交超期滞纳金（每天 0.1元/本）。</text>
+  </view>
+
+
+  <view class="min_bioati">4、违规罚款方法</view>
+  <view class="cor">
+    <text space="nbsp">     在书刊上涂抹、勾划或污损等，每损坏一页罚款0.50元。若损坏严重必须赔偿原书；</text>
+    <text space="nbsp">\n     丢失一般图书，按图书原价2倍赔偿；</text>
+    <text space="nbsp">\n     偷窃图书除追缴所窃图书外，并按所窃图书价格的 10倍罚款。</text>
+  </view>
+
+
+  <view class="min_bioati">5、文明公约</view>
+  <view class="cor">
+    <text space="nbsp"> （一）入馆禁止携带食物、饮料。</text>
+    <text space="nbsp">\n （二）入馆请保持着装整洁、禁止穿拖鞋、背心、短裤入馆。</text>
+    <text space="nbsp">\n （三）请勿大声喧哗、嬉戏、朗读、高声交谈，手机应调至关机或震动。</text>
+    <text space="nbsp">\n （四）应加强公德意识，严禁以书籍、物品或其他方式在阅览室占座。</text>
+    <text space="nbsp">\n （五）应保持清洁卫生，不得在馆内乱扔纸屑、随地吐痰。</text>
+    <text space="nbsp">\n （六）图书馆全馆禁烟，严禁携带易燃易爆及危险物品入馆。</text>
+    <text space="nbsp">\n （七）应爱护馆内一切设施，损坏公物要按规定赔偿。</text>
+    <text space="nbsp">\n   </text>
+    <text space="nbsp">\n   </text>
+  </view>
+</view>

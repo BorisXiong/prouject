@@ -1,0 +1,17 @@
+<!--pages/only/only.wxml-->
+<view class="only_box">
+  <h2>手机号</h2>
+  <view class="phone">
+    <text>+86</text>
+    <input type="number" placeholder="请输入手机号"/>
+  </view>
+  <h2>验证码</h2>
+  <view class="yz_position">
+    <input type="text" placeholder="请输入验证码" class="inp_sr" />
+    <navigator hover-class="none" bindtap="fs_yzm">发送验证码</navigator>
+  </view>
+  <h2>密码</h2>
+  <input type="number" password="boolean" placeholder="请输入登陆密码" class="inp_sr" />
+  
+</view>
+<button class="but_zc" hover-class="button_animation">注册</button>

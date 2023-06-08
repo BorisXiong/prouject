@@ -1,0 +1,18 @@
+<view class="fankui_box">
+  <view class="h1">反馈内容</view>
+  <textarea 
+    class="input_box" 
+    placeholder="请提供相关信息，以便我们处理！" 	
+    placeholder-style="font-size:14px;" 
+    value="" 
+    maxlength="200"  
+    bindinput="shuru_txt"  
+    name="remark"
+    auto-focus="true" >
+    <view class="jishu">{{jishu}}/200</view>
+  </textarea>
+  
+  
+</view>
+
+<view class="but_buts" hover-class="butto1" bindtap="tijiao_txt">提交</view>

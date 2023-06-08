@@ -1,0 +1,33 @@
+/* pages/u_center/u_center.wxss */
+page{
+  padding-top: 30px;
+  background-color: #FDFDFD;
+  /* background-color: #A5ACB2;  */
+}
+
+.li_box{
+  width: 90%;
+  margin: 10px auto;
+  height: 120px;
+  background-color: #8F9AA0;
+  /* background-color: #eee; */
+  /* background-color: #fff; */
+  border-radius: 10px;
+  padding: 10px 0 0 30px;
+}
+.li_box image{
+  width: 65px;
+  height: 100px;
+  /* background-color: #68A7DA; */
+  float: left;
+  margin-left: 10%;
+}
+.li_box  view{
+  float: left;
+  color: #fff;
+  /* color: #000; */
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 90px;
+  margin-left: 30px;
+}

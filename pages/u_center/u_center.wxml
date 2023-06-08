@@ -1,0 +1,15 @@
+
+
+<view class="li_box" hover-class="butto1" bindtap="goto_library1">
+  <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5hC0qeRV3OyVwYDok*DejP1jPJx5mPbIfvmJc.WYVH08uZzN1lwtMuvYd5LjA7.pl37wth0fA4dE4L3jLrE5q90!/b&bo=pgB6AaYAegEDFzI!&rf=viewer_4" style="width: 48px;margin-left: 5px;"></image>
+  <view>入馆教育</view>
+</view>
+<view class="li_box"  hover-class="butto1" bindtap="goto_library2">
+ 
+  <view>预座规则</view>
+  <image style="margin-left: 20px;transform: rotateY(-180deg); " src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5hC0qeRV3OyVwYDok*DejP3dOENmmKD2HcrJkRn8ej*kX85b1mqPdpO9gMCvVHJR9AOK2AKZGqrthoDAry9bpO4!/b&bo=kADcAJAA3AADFzI!&rf=viewer_4" ></image>
+</view>
+<view class="li_box"  hover-class="butto1" bindtap="goto_library3">
+  <image src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5hC0qeRV3OyVwYDok*DejP2uQHcQpKJX29vOCMQh.bhAEmm*rL7WraM39RJJpIrzIat9Ri7v69Ttw9l5mapbVs8!/b&bo=ngDqAJ4A6gADByI!&rf=viewer_4"></image>
+  <view>借阅规则</view>
+</view>

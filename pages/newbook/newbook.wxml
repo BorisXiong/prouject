@@ -1,0 +1,36 @@
+
+<view class="top_logo">
+  <view class="logo">
+    <text class="iconfont icon-vip-xinshukuizeng" style="font-size: 48px;" ></text>
+    {{h1_title}}
+  </view>
+  <view class="l_jianjie">
+    图书馆新书上架,根据受读者欢迎程度排序榜单
+  </view>
+</view>
+<!--  -->
+<view class="newbool">
+  <view class="logo_li">
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+    <view></view>
+  </view>
+
+  <view class="books" wx:for="{{books}}" wx:key="id" bindtap="dianji_books" data-id="{{item.b_isbn}}">
+    <view class="logo_top">TOP {{item.wid+1}}</view>
+    <image src="{{item.b_imgsrc}}"></image>
+    <view class="r_con">
+      <view class="bkname">{{item.b_name}}</view>
+      <view class="bkzuozhe">{{item.b_author}}</view>
+      <view class="bkjianjie">
+        {{item.b_intro}}
+      </view>
+    </view>
+  </view>
+</view>

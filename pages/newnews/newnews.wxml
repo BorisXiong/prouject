@@ -1,0 +1,24 @@
+<!--pages/newnews/newnews.wxml-->
+<view class="c_cor">
+  <view class="li_obx">
+    <text class="iconfont icon-laba"></text>
+    <view class="r_cor">
+      <view>系统通知</view>
+      <view >
+        <view>重要信息重要信息重要信息重要信息重要信息</view>
+      </view>
+      <view class="tz_user">管理员</view>
+    </view>
+  </view>
+  <!--  wx:for="{{tongzss}}" wx:key="id" -->
+  <view class="li_obx">
+    <text class="iconfont icon-laba"></text>
+    <view class="r_cor">
+      <view>{{tongzss.title}}</view>
+      <view>
+          <view>{{tongzss.text}}</view>
+      </view>
+      <view class="tz_user">{{tongzss.role}}</view>
+    </view>
+  </view>
+</view>

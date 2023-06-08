@@ -1,0 +1,40 @@
+
+.h1{
+  width: 100%;
+  height: 20px;
+  margin: 0px 0;
+  font-weight: 900;
+  text-align: center;
+}
+.max_bgc{
+  width: 90%;
+  margin: 20px auto;
+  min-height: 100px;
+  height: auto !important;
+  background-color: #fff;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+/*  */
+.contents{
+  width: 90%;
+  margin: 20px auto;
+  min-height: 100px;
+  height: auto !important;
+}
+.contents .min_bioati{
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+}
+.contents .cor{
+  width: 90%;
+  margin: 15px auto;
+}
+.contents .cor text{
+  line-height: 24px;
+}
+image{
+  width: 90%;
+  margin-left: 5%;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+
+  "navigationBarTitleText": "座位预定",
+ 
+  "lazyCodeLoading": "requiredComponents"
+}

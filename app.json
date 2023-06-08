@@ -1,0 +1,81 @@
+{
+  "pages": [
+   
+  
+    "pages/Sign_in/Sign_in",  
+    "pages/only/only",
+  
+    "pages/index/index",
+    "pages/newbook/newbook",
+
+    "pages/inquire/inquire",
+    "pages/inquire_ture/inquire_ture", 
+    "pages/Choice/Choice",
+    "pages/ck_yjilu/ck_yjilu",
+    "pages/newnews/newnews", 
+
+
+    "pages/seatmake/seatmake",
+    "pages/book_in/book_in",
+
+    "pages/user/user",
+    "pages/Personal/Personal",
+    "pages/user_xinxi/user_xinxi",
+
+   
+    "pages/u_center/u_center",
+    "pages/library1/library1",  
+    "pages/library2/library2",  
+    "pages/library3/library3",  
+    "pages/feedback/feedback",  
+    "pages/bk_Collection/bk_Collection",  
+    "pages/bk_room/bk_room",  
+    "pages/mybook/mybook"
+      
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#68A7DA",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "武汉城市学院图书馆",
+    "backgroundColor": "#FFF"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取您的地理位置，请确认授权，否则地图定位功能将无法使用"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#39a7e1",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "./icons/images/首页选中.png",
+        "iconPath": "./icons/images/主页.png"
+      },
+      {
+        "pagePath": "pages/inquire/inquire",
+        "text": "预座",
+        "selectedIconPath": "./icons/images/座位选中.png",
+        "iconPath": "./icons/images/座位.png"
+      },
+      {
+        "pagePath": "pages/seatmake/seatmake",
+        "text": "查询",
+        "selectedIconPath": "./icons/images/查询选中.png",
+        "iconPath": "./icons/images/查询.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "selectedIconPath": "./icons/images/我的选中.png",
+        "iconPath": "./icons/images/我的.png"
+      }
+    ]
+  },
+  
+  "lazyCodeLoading": "requiredComponents"
+}

@@ -1,0 +1,52 @@
+<!--pages/book_in/book_in.wxml-->
+<view class="top_bk">
+  <view class="books">
+    <image src="{{books.b_imgsrc}}"></image>
+    <view class="txt_r"> 
+        <h2>{{books.b_name}}</h2>
+        <view style="color: #AAAAAA;">{{books.b_author}}</view>
+    </view>
+    <view class="shoucang" bindtap="shoucang"><text class="iconfont {{t_iocn}}" style="color: {{sccolr}};"></text></view>
+    <button class="books_yy" hover-class="button_animation" bindtap="jy_book">立即借阅</button>
+  </view>
+</view>
+
+<!-- 内容 -->
+<view class="neir">
+  <view class="h1">
+    内容提要
+    <view class="b_xian"></view>
+  </view>
+  <view class="book_jian">
+    <text >{{books.b_intro}}</text>
+  </view>
+  <view class="h1">
+    在馆信息
+    <view class="b_xian"></view>
+  </view>
+  <view class="book_jian" style="font-size: 15px;">
+    <view>
+      <text>图书位置：\t{{books.b_location}}</text>
+      <text style="float:right;margin-right: 10%;">在馆数量:{{books.counts}}</text>
+    </view>
+  </view>
+  <view class="h1">
+    图书信息
+    <view class="b_xian"></view>
+  </view>
+  <view class="book_jian" style="font-size: 15px;">
+    <view>
+      <text>类别：{{books.b_classes}}</text>
+    </view>
+   
+    <view>
+      <text>ISBN：{{books.b_isbn}}</text>
+    </view>
+    <view>
+      <text>出版社：{{books.b_press}}</text>
+    </view>
+    <view>
+      <text>入馆时间：{{books.creattime}}</text>
+    </view>
+  </view>
+</view>

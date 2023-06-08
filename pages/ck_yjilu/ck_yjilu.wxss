@@ -1,0 +1,125 @@
+/* pages/ck_yjilu/ck_yjilu.wxss */
+page{
+  padding-top: 20px;
+  background-color: #8F9AA0;
+}
+
+.top_cor{
+  width: 90%;
+  margin: 0 auto;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.t_h1_bt{
+  margin: 10px 0;
+  margin-left: 20px;
+  font-weight: 800;
+}
+.bup_time{
+  width: 100%;
+  height: 60px;
+  /* background-color: rgb(16, 0, 156); */
+  border-top: 1px solid #EAE5E4;
+  z-index: 999;
+}
+.bup_time view{
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 5px;
+  /* background-color: blanchedalmond; */
+  font-weight: 600;
+  float: left;
+}
+.bup_time view view{
+  width: 100%;
+  text-align: center;
+  color: #ABABAB;
+}
+
+
+.btu_qiehuan{
+  width: 60%;
+  height: 20px;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+.c_cor{
+  width: 90%;
+  margin: 0 auto;
+  height: 170px;
+  /* background-color: bisque; */
+}
+.canvas{
+  width: 100%;
+  height: 100%;
+}
+
+
+.btnss{
+  width: 50%;
+  float: left;
+  text-align: center;
+  position: relative;
+
+}
+.ys_iocn{
+  width: 60%;
+  height: 6px;
+  background-color: #f53c04;
+  opacity: .6;
+  position: absolute;
+  left: 20%;
+  border-radius: 10px;
+  bottom: 0;
+
+}
+.tu_p{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.but_cor{
+  width: 90%;
+  min-height: 100px;
+  height: auto !important;
+  margin: 20px 5% 0 5%;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 0 0 0;
+  background-color: #A5ACB2;
+}
+.li{
+  width: 100%;
+  height: 100px;
+  padding-top: 3px;
+  /* background-color: antiquewhite; */
+  border-bottom: 1px solid #E5E5E5;
+}
+.li image{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px 15px;
+  /* background-color: aqua; */
+  float: left;
+}
+.li .r_cor{
+  float: left;
+  width: 50%;
+  height: 100%;
+  /* background-color: aqua; */
+}
+.li .r_cor .hhh1{
+  font-weight: 600;
+  color: #fff;
+  font-size: 24px;
+  margin: 5px 0;
+}
+.xx_tt{
+  color: #EFF1F1;
+  font-size: 12px;
+  margin: 5px 0;
+}

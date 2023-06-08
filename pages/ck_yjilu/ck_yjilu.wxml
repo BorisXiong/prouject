@@ -1,0 +1,49 @@
+<!--pages/ck_yjilu/ck_yjilu.wxml-->
+<view class="top_cor">
+  <!-- <image class="tu_p" src="http://m.qpic.cn/psc?/V519zvyD1C0EL63KyDum1jWkcI0Igc3R/ruAMsa53pVQWN7FLK88i5qc4gBLbBYCjn68PW8LJxxqR0w07G1H.kEI3S24k*lSfOUrPmzFBPSdtzPaYn4lWxDeGoqFZSFD1cVxPOcoksiA!/b&bo=ZgQ4BAAAAAADF2w!&rf=viewer_4"></image> -->
+
+  <view class="t_h1_bt">学习时长</view>
+  <view class="btu_qiehuan">
+    <view class="btnss  " bindtap="switchRightTab" data-id="1">
+      <span class="{{curNav == 1 ? 'ys_iocn' : ''}}"></span>
+      最近一周
+
+    </view>
+    <view class="btnss  {{curNav == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
+      <span class="{{curNav == 2 ? 'ys_iocn' : ''}}"></span>
+      最近一月
+
+    </view>
+  </view>
+  <view class="c_cor" wx:if="{{curNav==1}}">
+    <canvas style="width: 100%; height: 100%;" canvas-id="yueEle1" binderror="canvasIdErrorCallback"></canvas>
+  </view>
+  <view class="c_cor" wx:if="{{curNav==2}}">
+    <canvas style="width: 100%; height: 100%;" canvas-id="yueEle2" binderror="canvasIdErrorCallback"></canvas>
+  </view>
+  <view class="bup_time">
+    <view>
+      本周学习
+      <view>
+        <text style="color: #F7683C;font-size: 18px;">7.2</text>小时
+      </view>
+    </view>
+    <view>
+      本月学习
+      <view>
+        <text style="color: #F7683C;font-size: 18px;">37.2</text>小时
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="but_cor">
+  <view class="li" wx:for="{{U_yyjl}}" wx:key="id">
+    <image src="{{U_xinxis.userimg}}"></image>
+    <view class="r_cor">
+      <view class="hhh1">{{U_xinxis.nname}}</view>
+      <view class="xx_tt">{{(item.newrecord)}}</view>
+      <view class="xx_tt">{{(item.newtime)}}</view>
+    </view>
+  </view>
+</view>

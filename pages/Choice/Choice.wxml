@@ -1,0 +1,70 @@
+<!--pages/Choice/Choice.wxml-->
+<view class="page">
+  <view class="xuan_top">
+    <view class="nav_left_items {{curNav == 1 ? 'active' : ''}}" bindtap="switchRightTab" data-id="1">
+      <text class="iconfont  icon-yixuanzuowei"></text>{{zuowei1[1].wid}}楼
+    </view>
+    <view class="nav_left_items {{curNav == 2 ? 'active' : ''}}" bindtap="switchRightTab" data-id="2">
+      <text class="iconfont  icon-yixuanzuowei"></text>2楼
+    </view>
+    <view class="nav_left_items {{curNav == 3 ? 'active' : ''}}" bindtap="switchRightTab" data-id="3">
+      <text class="iconfont  icon-yixuanzuowei"></text>3楼
+    </view>
+    <view class="nav_left_items {{curNav == 4 ? 'active' : ''}}" bindtap="switchRightTab" data-id="4">
+      <text class="iconfont  icon-yixuanzuowei"></text>4楼
+    </view>
+
+  </view>
+  <view class="xuan_bottom">
+    <view wx:if="{{curNav==1}}">
+      <movable-area class="father-size">
+        <movable-view class='size' direction="all" inertia="true" out-of-bounds="true" x="100" y="100" damping="900" friction="100" bindchange="mychangeevent" bindscale="myscaleevent" scale="true" scale-max="6" animation="true">
+      
+          <view class="zuowei" wx:for="{{zuowei1}}" wx:key="id" bindtap="dianzuowei" data-id="{{item.wid}}" hover-class="button_animation">
+            <text class="iconfont  icon-yixuanzuowei" style="color:{{item.color}};" >
+            </text>
+          </view>
+         
+        </movable-view>
+      </movable-area>
+    </view>
+    <view wx:if="{{curNav==2}}">
+      <movable-area class="father-size">
+        <movable-view class='size' direction="all" inertia="true" out-of-bounds="true" x="100" y="100" damping="900" friction="100" bindchange="mychangeevent" bindscale="myscaleevent" scale="true" scale-max="6" animation="true">
+          <view class="zuowei" wx:for="{{zuowei2}}" wx:key="id" bindtap="dianzuowei" data-id="{{item.wid}}" hover-class="button_animation">
+            <text class="iconfont  icon-yixuanzuowei" style="color:{{item.color}};"></text>
+          </view>
+        </movable-view>
+      </movable-area>
+    </view>
+    <view wx:if="{{curNav==3}}">
+
+      <movable-area class="father-size">
+        <movable-view class='size' direction="all" inertia="true" out-of-bounds="true" x="100" y="100" damping="900" friction="100" bindchange="mychangeevent" bindscale="myscaleevent" scale="true" scale-max="6" animation="true">
+          <view class="zuowei" wx:for="{{zuowei3}}" wx:key="wid" bindtap="dianzuowei" data-id="{{item.wid}}" hover-class="button_animation">
+            <text class="iconfont  icon-yixuanzuowei" style="color:{{item.color}};"></text>
+          </view>
+        </movable-view>
+      </movable-area>
+    </view>
+    <view wx:if="{{curNav==4}}">
+
+      <movable-area class="father-size">
+        <movable-view class='size' direction="all" inertia="true" out-of-bounds="true" x="100" y="100" damping="900" friction="100" bindchange="mychangeevent" bindscale="myscaleevent" scale="true" scale-max="6" animation="true">
+          <view class="zuowei" wx:for="{{zuowei4}}" wx:key="id" bindtap="dianzuowei" data-id="{{item.wid}}" hover-class="button_animation">
+            <text class="iconfont  icon-yixuanzuowei" style="color:{{item.color}};"></text>
+          </view>
+        </movable-view>
+      </movable-area>
+    </view>
+
+    <view class="tishi">
+      <text class="iconfont  icon-yixuanzuowei" style="color: #EDA867;">已选</text>
+      <text class="iconfont  icon-yixuanzuowei" style="color: #C4C4C4;">未选</text>
+      <text class="iconfont  icon-yixuanzuowei" style="color: #234572;">在座</text>
+    </view>
+  </view>
+  <view class="bottom_but">
+    <button class="qu_but" hover-class="button_animation" bindtap="queding">确定</button>
+  </view>
+</view>

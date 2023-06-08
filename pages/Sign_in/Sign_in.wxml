@@ -1,0 +1,21 @@
+<view class="h1_">
+  <text>Hi,欢迎来到\n武汉城市学院图书馆
+  </text>
+</view>
+<view class="login">
+  <view class="login_input">
+    <text class="iconfont icon-yonghu"></text>
+    <input type="number" placeholder="请输入手机号/学号" value="" 	bindinput="content"/>
+  </view>
+  <view class="login_input">
+    <text class="iconfont icon-mima"></text>
+    <input type="number" password="boolean" placeholder="请输入登陆密码" value=""  	bindinput="password"/>
+  </view>
+  <!-- 忘记密码 -->
+  <view class="wj_pass"><navigator bindtap="wj_poss" 		hover-class="none">忘记密码</navigator></view>
+  <!-- 按钮 -->
+  <button class="btu" bindtap="goadmin" hover-class="button_animation">
+    <text class="iconfont icon-youjiantou" ></text>
+  </button>
+  <view class="zc_zhuce"><navigator url="../only/only" hover-class="none">还没有账号？<b>去注册</b></navigator></view>
+</view>
